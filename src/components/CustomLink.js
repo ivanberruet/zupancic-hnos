@@ -5,7 +5,9 @@ export default function CustomLink({href,title,className=""}){
 	const router = useRouter()
 
 	return (
-		<a href={href} className={`${className} relative group`}>
+		<a href={href} className={`${className} relative group
+		lg:text-base font-bold`
+		}>
 			{title}
 			<span className={`
 			h-[1px] inline-block bg-dark 
