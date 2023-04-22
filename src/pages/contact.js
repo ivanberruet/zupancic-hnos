@@ -2,7 +2,7 @@ import AnimatedText from '@amigos/components/AnimatedText'
 import Layout from '@amigos/components/Layout'
 import Head from 'next/head'
 import React from 'react'
-import {AiOutlinePhone, AiOutlineMail} from 'react-icons/Ai'
+import {AiOutlinePhone, AiOutlineMail} from 'react-icons/ai'
 import {FiMapPin} from 'react-icons/fi'
 
 export default function Contact() {
