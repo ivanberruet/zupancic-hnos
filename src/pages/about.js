@@ -13,6 +13,8 @@ export default function About() {
 			<main className="flex flex-col min-h-screen text-dark pt-[60px] md:pt-[80px] lg:pt-[90px]">
 				<Layout className='pt-[60px] xl:!pt-28'>
 					<AnimatedText text="¿Quiénes somos?" className='text-dark text-center text-4xl xl:text-5xl'/>
+					<div className='w-full h-[300px] mx-auto my-10 bg-about bg-cover bg-center overflow-hidden'>
+					</div>
 					<div className='mt-12 flex flex-col gap-2 text-dark text-lg xl:w-[1200px] xl:text-xl'>
 						<p>
 							Somos un estudio contable formado por dos hermanos especializados en diferentes áreas de las finanzas y la contabilidad, lo que nos permitió complementarnos y formar un equipo sólido y eficiente. Juntos, trabajamos en el campo de la contabilidad y las finanzas, brindando servicios de asesoría a empresas y particulares.

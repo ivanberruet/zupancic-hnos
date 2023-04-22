@@ -20,7 +20,8 @@ module.exports = {
 				primaryDark: "#12CC43", // 
 			},
 			backgroundImage:{
-				'home': "url('../../public/accounting-1.jpg')"
+				'home': "url('../../public/accounting-1.jpg')",
+				'about': "url('../../public/about.jpg')",
 			},
 		},
 		screens: {
