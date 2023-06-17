@@ -14,11 +14,11 @@ export default function Home() {
 				<Layout className="pt-24 lg:pt-32 xl:!pt-36"
 				>
 					<div className="w-full pl-6 flex flex-col gap-10 xl:gap-16">
-						<p className="flex flex-col w-full">
+						<p className="flex flex-col w-full md:flex-row">
 							<span className="text-4xl font-bold xl:text-5xl">
 								<span className="text-primary">Z</span>UPANCIC
 							</span>
-							<span className="text-4xl font-bold xl:text-5xl">
+							<span className="text-4xl font-bold md:ml-5 xl:text-5xl">
 								<span className="text-primary">H</span>ERMANOS
 							</span>
 						</p>

@@ -2,6 +2,7 @@ import AnimatedText from '@amigos/components/AnimatedText'
 import Layout from '@amigos/components/Layout'
 import { sendContactForm } from '@amigos/lib/api'
 import Head from 'next/head'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 import {AiOutlinePhone, AiOutlineMail} from 'react-icons/ai'
@@ -25,7 +26,10 @@ export default function Contact() {
 			}
 		}))
 
-	const onSubmit = async ()=>{
+	
+	const onSubmit = async (e)=>{
+		e.preventDefault()
+
 		setState((prevState)=>({
 			...prevState,
 			isLoading: true,
@@ -34,11 +38,12 @@ export default function Contact() {
 		try {
 			await sendContactForm(values)
 		} catch (error) {
-			alert(error)
+			console.log(error)
 		}
-			alert("Mensaje enviado con éxito")
+		alert("Mensaje enviado con éxito")
 		router.push("/")
 	}
+
 	return (
 		<>
 			<Head>
@@ -55,20 +60,21 @@ export default function Contact() {
 						<div className='w-full lg:w-[400px] bg-dark/20 mt-6 p-4 rounded-md flex flex-col gap-2 shadow-xl'>
 							<h2 className='font-bold text-xl mb-4 xl:text-2xl'>Consúltenos Directamente</h2>
 							<div className='flex items-center gap-2'>
-								<AiOutlinePhone className='text-primary' /> (011) 11-73647773
+								<AiOutlinePhone className='text-primary' /> (011) 11 7364-7773
 							</div>
 							<div className='flex items-center gap-2'>
-								<AiOutlineMail className='text-primary' /> info@gmail.com
+								<AiOutlineMail className='text-primary' /> <Link href="mailto:info@zupancichnos.com.ar">info@zupancichnos.com.ar</Link>
 							</div>
 							<div className='flex items-center gap-2'>
 								<FiMapPin className='text-primary' /> Buenos Aires
 							</div>
 						</div>
-						<form className='w-full lg:w-[80%] mx-auto shadow-xl mt-6 p-4 rounded-md flex flex-col' onSubmit={onSubmit}>
+						<form className='w-full lg:w-[60%] mx-auto shadow-xl mt-6 p-4 rounded-md flex flex-col' onSubmit={onSubmit}>
 							<h2 className='font-bold text-xl mb-4 self-center  xl:text-2xl'>O complete el formulario de contacto</h2>
 							
 							<label className='font-semibold' htmlFor="first-name">Nombre:</label>
 							<input className='bg-dark/10 rounded-md border border-transparent mb-6 px-2 py-1 focus-visible:outline-none text-base' 
+								id='first-name'
 								type="text" 
 								name='Nombre' 
 								defaultValue={values.firstName} 
@@ -77,6 +83,7 @@ export default function Contact() {
 
 							<label className='font-semibold' htmlFor="last-name">Apellido:</label>
 							<input className='bg-dark/10 rounded-md border border-transparent mb-6 px-2 py-1 focus-visible:outline-none text-base' 
+								id='last-name'
 								type="text" 
 								name='Apellido' 
 								defaultValue={values.lastName} 
@@ -85,6 +92,7 @@ export default function Contact() {
 
 							<label className='font-semibold' htmlFor="mail">Mail:</label>
 							<input className='bg-dark/10 rounded-md border border-transparent mb-6 px-2 py-1 focus-visible:outline-none text-base' 
+								id='mail'
 								type="text" 
 								name='Email' 
 								defaultValue={values.email} 
@@ -93,6 +101,7 @@ export default function Contact() {
 
 							<label className='font-semibold' htmlFor="phone">Teléfono:</label>
 							<input className='bg-dark/10 rounded-md border border-transparent mb-6 px-2 py-1 focus-visible:outline-none text-base' 
+								id='phone'
 								type="text" 
 								name='Telefono' 
 								defaultValue={values.phone} 
@@ -101,6 +110,7 @@ export default function Contact() {
 
 							<label className='font-semibold' htmlFor="content">Consulta:</label>
 							<textarea className='bg-dark/10 rounded-md border border-transparent mb-6 px-2 py-1 focus-visible:outline-none text-base' 
+								id='content'
 								type="text" 
 								name='Mensaje' 
 								defaultValue={values.message} 
@@ -108,9 +118,9 @@ export default function Contact() {
 								required={true}/>
 						
 							<button
-							type='button' 
+							type='submit' 
 							className='bg-primary w-fit self-center px-6 py-2 rounded-lg text-light hover:scale-105'
-							onClick={()=>onSubmit()}
+							onSubmit={()=>onSubmit()}
 							>Enviar</button>
 
 						</form>

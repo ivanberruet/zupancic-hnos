@@ -20,7 +20,7 @@ module.exports = {
 				primaryDark: "#12CC43", // 
 			},
 			backgroundImage:{
-				'home': "url('../../public/accounting-1.jpg')",
+				'home': "url('../../public/home.jpg')",
 				'about': "url('../../public/about.jpg')",
 			},
 		},
@@ -34,7 +34,7 @@ module.exports = {
 			lg: { min: "1023px" },
 			// => @media (min-width: 1023px) { ... }
 	
-			md: { min: "767px" },
+			md: { min: "830px" },
 			// => @media (min-width: 767px) { ... }
 	
 			sm: { min: "639px" },

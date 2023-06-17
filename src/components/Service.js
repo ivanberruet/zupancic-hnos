@@ -21,7 +21,7 @@ export default function Service({title, content, img, className=""}) {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className='font-bold text-lg xl:text-2xl'>{title}</Typography>
+          <Typography className='!font-bold text-lg xl:text-2xl'>{title}</Typography>
         </AccordionSummary>
 
         <AccordionDetails className='flex flex-col gap-6 overflow-hidden'>

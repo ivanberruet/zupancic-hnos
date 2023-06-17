@@ -27,7 +27,7 @@ export default function App({ Component, pageProps }) {
 				<Component {...pageProps} />
 				<Footer/>
 
-				<Link href={"https://wa.link/xevqad"} className='fixed bottom-8 right-8'>
+				<Link href={process.env.NEXT_PUBLIC_WP_LINK} target='_blank' className='fixed bottom-8 right-8'>
 					<WhatsApp />
 				</Link>
 
