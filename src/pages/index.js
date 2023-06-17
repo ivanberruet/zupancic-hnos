@@ -14,7 +14,6 @@ export default function Home() {
 				<Layout className="pt-24 lg:pt-32 xl:!pt-36"
 				>
 					<div className="w-full pl-6 flex flex-col gap-10 xl:gap-16">
-						<AnimatedText text="Asesoramiento contable impositivo" className="w-full font-bold text-4xl xl:text-5xl" />
 						<p className="flex flex-col w-full">
 							<span className="text-4xl font-bold xl:text-5xl">
 								<span className="text-primary">Z</span>UPANCIC
@@ -23,6 +22,7 @@ export default function Home() {
 								<span className="text-primary">H</span>ERMANOS
 							</span>
 						</p>
+						<AnimatedText text="Asesoramiento contable impositivo" className="w-full font-bold text-4xl xl:text-5xl" />
 						<Link href={"/about"} className="px-6 py-2 bg-primary/90 w-fit xl:px-8 xl:py-4 hover:underline underline-offset-2">
 							Más información
 						</Link>

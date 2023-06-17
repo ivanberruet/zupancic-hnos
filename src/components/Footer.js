@@ -36,7 +36,7 @@ export default function Footer() {
 					</ul>
 
 				</ul>
-					<span>{new Date().getFullYear()} &copy; All Rights Reserverd.</span>
+					<span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
 			</div>
 		</footer>	
 	)

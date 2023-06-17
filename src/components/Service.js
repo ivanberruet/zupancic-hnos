@@ -25,10 +25,10 @@ export default function Service({title, content, img, className=""}) {
         </AccordionSummary>
 
         <AccordionDetails className='flex flex-col gap-6 overflow-hidden'>
-          <Typography className='whitespace-pre-line lg:w-full xl:text-lg'>{content}</Typography>
-					<div className='w-full hidden lg:inline-block'>
+          <Typography className='whitespace-pre-line text-justify lg:w-full xl:text-lg'>{content}</Typography>
+					{/* <div className='w-full hidden lg:inline-block'>
 						<Image src={img} alt="accounting" className=' w-full h-auto object-cover'/>
-					</div>
+					</div> */}
         </AccordionDetails>
       </Accordion>
 		</motion.li>

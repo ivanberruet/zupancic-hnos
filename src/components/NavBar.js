@@ -2,10 +2,7 @@ import React, { useState } from 'react'
 import Logo from './Logo'
 import {motion} from "framer-motion"
 import CustomMobileLink from './CustomMobileLink'
-import Link from 'next/link'
 import CustomLink from './CustomLink'
-import WhatsApp from './WhatsApp'
-import Instagram from './Instagram'
 
 export default function NavBar() {
 	const [isOpen, setIsOpen] = useState(false)
@@ -17,7 +14,6 @@ export default function NavBar() {
 	return (
 		<header
 		className='fixed top-0 w-full h-[60px] p-6 font-medium text-xs flex items-center justify-between text-dark border-b-2 border-b-primary z-10 md:h-[80px] lg:h-[90px] bg-gray-200'>
-
 			<div className='absolute left-[50%] top-3 translate-x-[-50%] bg'>
 				<Logo />
 			</div>
@@ -52,7 +48,7 @@ export default function NavBar() {
 			<div className='w-full hidden
 			md:inline-block md:text-xs
 			lg:!text-base'>
-				ESTUDIO CONTABLE
+				ESTUDIO CONTABLE ZUPANCIC
 			</div>
 
 			<div className="w-full hidden justify-between items-center 
