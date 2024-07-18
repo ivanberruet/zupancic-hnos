@@ -47,7 +47,7 @@ export default function NavBar() {
 			{/*Desktop*/}
 			<div className='w-full hidden
 			md:inline-block md:text-xs
-			lg:!text-base'>
+			lg:!text-base font-bold'>
 				ESTUDIO CONTABLE ZUPANCIC
 			</div>
 

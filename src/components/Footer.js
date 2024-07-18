@@ -25,12 +25,12 @@ export default function Footer() {
 				<ul className=' w-max flex flex-col gap-1 items-center text-xs md:items-start md:flex-auto md:flex-shrink-0 lg:!flex-none'>
 					<div className='font-bold underline underline-offset-2 mb-2'>Información:</div>
 					<Link href={process.env.NEXT_PUBLIC_WP_LINK} target='_blank'>
-						<p className=''>Teléfono: (011) 11 7364-7773</p>
+						<p className=''>Teléfono: +54 9 11 7364-7773</p>
 					</Link>
 					<Link href="mailto:info@zupancichnos.com.ar">
-						<p className=''>Mail: info@zupancichnos.com.ar</p>
+						<p className=''>Mail: info@estudiozupancic.com.ar</p>
 					</Link>
-					<p className=''>Ubicación: Buenos Aires</p>
+					<p className=''>Ubicación: Buenos Aires, Argentina</p>
 					<ul className='flex gap-1'>
 						<Link href={process.env.NEXT_PUBLIC_WP_LINK} target='_blank' >
 							<WhatsApp className='w-6 h-6' />

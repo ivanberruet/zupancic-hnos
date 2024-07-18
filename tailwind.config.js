@@ -16,12 +16,13 @@ module.exports = {
 			colors: {
 				dark: "#191B1C",
 				light: "#f0f0f0",
-				primary: "#CC1318", // 
-				primaryDark: "#12CC43", // 
+				// primary: "#0f528e", // Blue 
+				primary: "#CC1318", // Red
+				primaryDark: "#12CC43", 
 			},
 			backgroundImage:{
 				'home': "url('../../public/home.jpg')",
-				'about': "url('../../public/about.jpg')",
+				'about': "url('../../public/about3.jpg')",
 			},
 		},
 		screens: {

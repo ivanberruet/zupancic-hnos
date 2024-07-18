@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }) {
 			<Head>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
-				<title>Zupancic Hermanos</title>
+				<title>Estudio Zupancic</title>
 			</Head>
 			<main className={`${montserrat.className} relative bg-light dark:bg-dark w-full min-h-screen`}>
 				<NavBar />

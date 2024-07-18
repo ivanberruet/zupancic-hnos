@@ -15,7 +15,7 @@ export default function Services() {
 	return (
 		<>
 			<Head>
-				<title>Iván Berruet | Servicios</title>
+				<title>Estudio Zupancic | Servicios</title>
 				<meta name="description" content="description"/>
 			</Head>
 			<main className="flex flex-col min-h-screen text-dark pt-[60px] md:pt-[80px] lg:pt-[90px]">

@@ -47,7 +47,7 @@ export default function Contact() {
 	return (
 		<>
 			<Head>
-				<title>Zupancic Hnos. | Contacto</title>
+				<title>Estudio Zupancic | Contacto</title>
 				<meta name="description" content="description"/>
 			</Head>
 			<main className="flex flex-col min-h-screen text-dark pt-[60px] md:pt-[80px] lg:pt-[90px]">
@@ -60,13 +60,13 @@ export default function Contact() {
 						<div className='w-full lg:w-[400px] bg-dark/20 mt-6 p-4 rounded-md flex flex-col gap-2 shadow-xl'>
 							<h2 className='font-bold text-xl mb-4 xl:text-2xl'>Consúltenos Directamente</h2>
 							<div className='flex items-center gap-2'>
-								<AiOutlinePhone className='text-primary' /> (011) 11 7364-7773
+								<AiOutlinePhone className='text-primary' /> +54 9 11 7364-7773
 							</div>
 							<div className='flex items-center gap-2'>
-								<AiOutlineMail className='text-primary' /> <Link href="mailto:info@zupancichnos.com.ar">info@zupancichnos.com.ar</Link>
+								<AiOutlineMail className='text-primary' /> <Link href="mailto:info@zupancichnos.com.ar">info@estudiozupancic.com.ar</Link>
 							</div>
 							<div className='flex items-center gap-2'>
-								<FiMapPin className='text-primary' /> Buenos Aires
+								<FiMapPin className='text-primary' /> Buenos Aires, Argentina
 							</div>
 						</div>
 						<form className='w-full lg:w-[60%] mx-auto shadow-xl mt-6 p-4 rounded-md flex flex-col' onSubmit={onSubmit}>

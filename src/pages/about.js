@@ -7,13 +7,13 @@ export default function About() {
 	return (
 		<>
 			<Head>
-				<title>Zupancic Hnos. | Quiénes somos</title>
+				<title>Estudio Zupancic | Quiénes somos</title>
 				<meta name="description" content="description"/>
 			</Head>
 			<main className="flex flex-col min-h-screen text-dark pt-[60px] md:pt-[80px] lg:pt-[90px]">
 				<Layout className='pt-[60px] xl:!pt-28'>
 					<AnimatedText text="¿Quiénes somos?" className='text-dark text-center text-4xl xl:text-5xl'/>
-					<div className='w-full h-[300px] mx-auto my-10 bg-about bg-cover bg-center overflow-hidden'>
+					<div className='w-full h-[500px] mx-auto my-10 bg-about bg-cover bg-center overflow-hidden'>
 					</div>
 					<div className='mt-12 flex flex-col gap-2 text-dark text-lg xl:text-xl'>
 						<p className='text-justify'>

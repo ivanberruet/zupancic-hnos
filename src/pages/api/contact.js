@@ -19,7 +19,7 @@ export default async function handler(req, res) {
 	 	try {
 	 		await transporter.sendMail({
 	 			...mailOptions,
-	 			subject: "Consulta - Zupancic Hermanos",
+	 			subject: "Consulta - Estudio Zupancic",
 	 			...generateEmailContent(data)
 	 		})
 	 		return res.status(200).json({success: true})
